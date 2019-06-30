@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { signup, login, logout } from '../../actions/session_actions';
 import SessionForm from './session_form';
 
-
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
 
 const mapStateToProps = ({ errors }) => {
