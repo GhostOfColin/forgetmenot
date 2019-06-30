@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SessionLinks from './session_links';
 
-class HomePage extends React.Component { 
+class HomePage1 extends React.Component { 
   constructor(props) {
     super(props);
   }
@@ -29,4 +29,4 @@ class HomePage extends React.Component {
 };
 
 
-export default HomePage;
+export default HomePage1;
