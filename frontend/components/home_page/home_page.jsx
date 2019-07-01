@@ -9,6 +9,7 @@ class HomePage1 extends React.Component {
   }
 
   logout() {
+    debugger;
     this.props.logout();
   }
 

@@ -13,10 +13,13 @@ const logoutCurrentUser = () => ({
   type: LOGOUT_CURRENT_USER,
 });
 
-const receiveErrors = (errors) => ({
+const receiveErrors = (errors) => {
+  debugger;
+  return {
   type: RECEIVE_SESSION_ERRORS,
-  errors: errors.responseJSON
-});
+  errors: errors.responseText
+  };
+};
 
 export const signup = (user) => {
   return (dispatch) => {
