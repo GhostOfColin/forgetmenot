@@ -5,15 +5,20 @@ import SessionLinks from './session_links';
 class HomePage1 extends React.Component { 
   constructor(props) {
     super(props);
+    this.logout = this.logout.bind(this);
+  }
+
+  logout() {
+    this.props.logout();
   }
 
   homePage() {
 
     return (
       
-    <div className="home-page-wrapper">
+    <div className="logout-button">
       
-      Homepage
+      {<button onClick={() => this.logout()} className="logout-button">Logout</button>}
 
     </div>)
   };
