@@ -1,21 +1,25 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 import Header from './header/header';
-import HomePage from './home_page/home_page_container';
+import HomePageContainer from './home_page/home_page_container';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
+import NoMatch from './no_match';
 
 const App = () => (
   <div>
-    <header>
-      <Header/>
-      <HomePage/>
-    </header>
     
-    <AuthRoute exact path="/login" component={LoginFormContainer} />
-    <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <Header/>
+
+    <Switch>
+      <Route exact path="/" component={HomePageContainer}/>
+      <AuthRoute path="/login" component={LoginFormContainer} />
+      <AuthRoute path="/signup" component={SignupFormContainer} />
+      <Route component={NoMatch}/>
+    </Switch>
+
   </div>
 );
 

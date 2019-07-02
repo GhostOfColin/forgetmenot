@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Header extends React.Component {
+class Console extends React.Component {
 
   constructor(props) {
     super(props);
@@ -14,4 +14,4 @@ class Header extends React.Component {
 
 }
 
-export default Header;
+export default Console;
