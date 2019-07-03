@@ -39,11 +39,6 @@ class SessionForm extends React.Component {
     );
   }
 
-  demo(e) {
-    e.preventDefault();
-    this.props.login({username: "guest", password: "password"})
-  }
-
   componentDidMount() {
     this.props.clearErrors()
   }
@@ -91,9 +86,6 @@ class SessionForm extends React.Component {
               <br/>
               <br/>
               <input className="session-submit" type="submit" value={this.props.formType} /> 
-              <br/>
-              <br/>
-              <button className="guest-button" onClick={this.demo}>Try it as a Guest</button>
               <br/>
               <br/>
               <div className="alternate">

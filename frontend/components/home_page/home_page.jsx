@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SessionLinks from './session_links';
+import LandingPage from './landing_page';
+import Header from '../header/header';
 
 class HomePage1 extends React.Component { 
   constructor(props) {
@@ -9,26 +10,36 @@ class HomePage1 extends React.Component {
   }
 
   logout() {
-    debugger;
     this.props.logout();
+  }
+
+  demo(e) {
+    e.preventDefault();
+    this.props.login({username: "guest", password: "password"})
   }
 
   homePage() {
 
     return (
       
-    <div className="logout-button">
-      
-      {<button onClick={() => this.logout()} className="logout-button">Logout</button>}
+    <div>
+      <Header/>
+      <div className="logout-button">
+        
+        {<button onClick={() => this.logout()} className="logout-button">Logout</button>}
 
-    </div>)
+      </div>
+
+    </div>  
+      
+    )
   };
 
   render() {
     if (this.props.currentUser) {
       return this.homePage()
     } else {
-      return <SessionLinks/>;
+      return <LandingPage props={this.demo}/>;
     }
   }
     

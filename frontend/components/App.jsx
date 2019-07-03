@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
-import Header from './header/header';
+
 import HomePageContainer from './home_page/home_page_container';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
@@ -10,8 +10,6 @@ import NoMatch from './no_match';
 
 const App = () => (
   <div>
-    
-    <Header/>
 
     <Switch>
       <Route exact path="/" component={HomePageContainer}/>
