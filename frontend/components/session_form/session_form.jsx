@@ -39,6 +39,11 @@ class SessionForm extends React.Component {
     );
   }
 
+  demo(e) {
+    e.preventDefault();
+    this.props.login({username: "guest", password: "password"})
+  }
+
   componentDidMount() {
     this.props.clearErrors()
   }
@@ -50,9 +55,7 @@ class SessionForm extends React.Component {
   render() {
     return (
         <>
-        
-        <Link to="/"><span className="modal-close">&times;</span></Link> 
-        <HomePageContainer/>
+        {/* <HomePageContainer/> */}
         <div className="modal-open">
         <div className="opacity">
           <form className="modal-form" onSubmit={this.handleSubmit}>

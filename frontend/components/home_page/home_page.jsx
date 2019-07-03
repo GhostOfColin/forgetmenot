@@ -13,11 +13,6 @@ class HomePage1 extends React.Component {
     this.props.logout();
   }
 
-  demo(e) {
-    e.preventDefault();
-    this.props.login({username: "guest", password: "password"})
-  }
-
   homePage() {
 
     return (
@@ -39,7 +34,7 @@ class HomePage1 extends React.Component {
     if (this.props.currentUser) {
       return this.homePage()
     } else {
-      return <LandingPage props={this.demo}/>;
+      return <LandingPage login={this.props.login}/>;
     }
   }
     
