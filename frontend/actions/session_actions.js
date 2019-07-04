@@ -23,7 +23,7 @@ const receiveErrors = (errors) => {
 export const signup = (user) => {
   return (dispatch) => {
     return APIUtil.signup(user).then((user) => {
-      return dispatch(receiveCurrentUser(user));
+      return dispatch(receiveCurrentUser(user))
     }, err => {
       return dispatch(receiveErrors(err));
     });
