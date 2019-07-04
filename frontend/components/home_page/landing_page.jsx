@@ -27,8 +27,11 @@ class LandingPage extends React.Component {
           </div>
         </nav> 
 
-        <h1 className="landing-page-header">The smart to-do app for busy people.</h1>
-        <Link to="/signup"><button className="create-account-button2" >Sign up for free</button></Link>
+        <div className="center-items">
+          <h1 className="landing-page-header">The smart to-do app for busy people.</h1>
+          <Link to="/signup"><button className="create-account-button2" >Sign Up Free</button></Link>
+        </div>
+        
 
       </div>
     )

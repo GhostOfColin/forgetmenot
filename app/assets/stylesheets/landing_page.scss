@@ -11,7 +11,7 @@
 }
 
 .landing-page-links {
-  width: 330px;
+  width: 340px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -47,19 +47,30 @@
 }
 
 .landing-page-header {
-  margin-top: 200px;
+  margin-top: 180px;
   font-size: 44px;
   font-weight: 700;
   font-family: MuseoSansRounded, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
 }
 
+.center-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .create-account-button2 {
-  // border: 2px solid white;
-  // border-radius: 5px;
-  // padding: 7px;
-  // color: #fff;
-  // background-color: #d24b03;
-  // border-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 7px;
+  color: #fff;
+  background-color: #d24b03;
+  border-color: transparent;
+  margin-top: 40px;
+  padding: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 24px;
 }
 
