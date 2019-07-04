@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SessionLinks from './session_links';
+import LandingPage from './landing_page';
 
 class HomePage1 extends React.Component { 
   constructor(props) {
@@ -27,7 +27,7 @@ class HomePage1 extends React.Component {
     if (this.props.currentUser) {
       return this.homePage()
     } else {
-      return <SessionLinks/>;
+      return <LandingPage login={this.props.login}/>;
     }
   }
     
