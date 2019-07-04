@@ -16,7 +16,7 @@ class LandingPage extends React.Component {
   render() {
     return ( 
       <div className="landing-page">
-        <nav className="landing-page-header">
+        <nav className="landing-page-console">
           <div className="landing-page-items-wrapper">
             <h1>ForgetMeNot</h1>
             <div className="landing-page-links">
@@ -26,6 +26,10 @@ class LandingPage extends React.Component {
             </div>  
           </div>
         </nav> 
+
+        <h1 className="landing-page-header">The smart to-do app for busy people.</h1>
+        <Link to="/signup"><button className="create-account-button2" >Sign up for free</button></Link>
+
       </div>
     )
   }

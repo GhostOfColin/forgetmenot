@@ -5,6 +5,9 @@
   font-size: 15px;
   color: white;
   font-weight: bold;
+  justify-content: center;
+  background-color: #0060bf;
+  height: 100vh;
 }
 
 .landing-page-links {
@@ -24,7 +27,7 @@
   height: auto;
 }
 
-.landing-page-header {
+.landing-page-console {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,11 +35,31 @@
   height: 113px;
   background-color: #0060bf;
   margin: auto;
+  position: fixed;
+  top: 0;
+  border-bottom: 0.05px solid grey;
 }
 
 .create-account-button {
   border: 2px solid white;
   border-radius: 5px;
   padding: 7px;
+}
+
+.landing-page-header {
+  margin-top: 200px;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: MuseoSansRounded, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.create-account-button2 {
+  // border: 2px solid white;
+  // border-radius: 5px;
+  // padding: 7px;
+  // color: #fff;
+  // background-color: #d24b03;
+  // border-color: transparent;
 }
 
