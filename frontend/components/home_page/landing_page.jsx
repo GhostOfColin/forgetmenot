@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SimpleSlider from './carousel';
 
 class LandingPage extends React.Component { 
 
@@ -30,6 +31,7 @@ class LandingPage extends React.Component {
         <div className="center-items">
           <h1 className="landing-page-header">The smart to-do app for busy people.</h1>
           <Link to="/signup"><button className="create-account-button2" >Sign Up Free</button></Link>
+          <SimpleSlider/>
         </div>
         
 

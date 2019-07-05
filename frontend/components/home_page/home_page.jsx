@@ -30,7 +30,7 @@ class HomePage1 extends React.Component {
       return <LandingPage login={this.props.login}/>;
     }
   }
-    
+  
 };
 
 
