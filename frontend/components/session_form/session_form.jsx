@@ -58,30 +58,32 @@ class SessionForm extends React.Component {
           </div>
 
           <div className="session-right">
-            <div>
+            <div className="alt-page-button-container">
               {this.props.navLink}
             </div>
-            <h1>{this.props.pageText}</h1>
-            <form onSubmit={this.handleSubmit}>
-              <div>
-                <label>
-                  <input type="text"
-                    placeholder="Username"
-                    value={this.state.username}
-                    onChange={this.update('username')}
-                  />
-                </label>
-                <label>
-                  <input type="password"
-                    placeholder="Password"
-                    value={this.state.password}
-                    onChange={this.update('password')}
-                  />
-                </label>
-                <input type="submit" value={this.props.pageButtonText} />
-              </div>
-              {this.renderErrors()}
-            </form>
+            <div className="session-form-container">
+              <h1>{this.props.pageText}</h1>
+              <form onSubmit={this.handleSubmit}>
+                <div>
+                  <label>
+                    <input type="text"
+                      placeholder="Username"
+                      value={this.state.username}
+                      onChange={this.update('username')}
+                    />
+                  </label>
+                  <label>
+                    <input type="password"
+                      placeholder="Password"
+                      value={this.state.password}
+                      onChange={this.update('password')}
+                    />
+                  </label>
+                  <input type="submit" value={this.props.pageButtonText} />
+                </div>
+                {this.renderErrors()}
+              </form>
+            </div>
           </div>
         </div>
       </div>  

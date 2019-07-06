@@ -1,8 +1,6 @@
 
 .session_screen {
   display: flex;
-  // flex-direction: column;
-  // justify-content: center;
 }
 
 .row {
@@ -30,4 +28,26 @@
   .session-left {
     display: none;
   }
+}
+
+.alt-page-button-container {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.alt-page-link {
+  font-size: 15px;
+  font-family: MuseoSansRounded, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgba(0, 96, 191, 0.1);
+  padding: 10px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+.session-form-container {
+  
 }
