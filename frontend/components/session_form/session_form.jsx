@@ -1,8 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import HomePageContainer from './../home_page/home_page_container';
-
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -54,56 +51,40 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-        <>
-        {/* <HomePageContainer/> */}
-        <div className="modal-open">
-        <div className="opacity">
-          <form className="modal-form" onSubmit={this.handleSubmit}>
-           
-            <br/>
-            Please {this.props.formType} 
-            
-            <div className="login-form">
-              <div>
-              </div>
-              <br/>
-              <label>
-                <input type="text"
-                  placeholder="Username"
-                  value={this.state.username}
-                  onChange={this.update('username')}
-                  className="login-input"
-                />
-              </label>
-              <br/>
-              <br/>
-              <label>
-                <input type="password"
-                  placeholder="Password"
-                  value={this.state.password}
-                  onChange={this.update('password')}
-                  className="login-input"
-                />
-              </label>
-              
-              <br/>
-              <br/>
-              <input className="session-submit" type="submit" value={this.props.formType} /> 
-              <br/>
-              <br/>
-              <div className="alternate">
-                {this.props.navLink}
-              </div>
-              
-            </div>
-            {this.renderErrors()}
-          </form>
-        </div>
-        </div>
-        </>
-        
-      
+      <div className="session-screen">
+        <div className="row">
+          <div className="session-left">
 
+          </div>
+
+          <div className="session-right">
+            <div>
+              {this.props.navLink}
+            </div>
+            <h1>{this.props.pageText}</h1>
+            <form onSubmit={this.handleSubmit}>
+              <div>
+                <label>
+                  <input type="text"
+                    placeholder="Username"
+                    value={this.state.username}
+                    onChange={this.update('username')}
+                  />
+                </label>
+                <label>
+                  <input type="password"
+                    placeholder="Password"
+                    value={this.state.password}
+                    onChange={this.update('password')}
+                  />
+                </label>
+                <input type="submit" value={this.props.pageButtonText} />
+              </div>
+              {this.renderErrors()}
+            </form>
+          </div>
+        </div>
+      </div>  
     );
   }
 }

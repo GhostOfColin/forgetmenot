@@ -1,0 +1,27 @@
+
+.session_screen {
+  display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.session-left {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  background: #0060bF;
+}
+
+.session-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
