@@ -48,6 +48,25 @@
   border-radius: 3px;
 }
 
+.session-form-wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
 .session-form-container {
-  
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  // border: 2px solid grey;
+  width: 300px;
+  height: auto;
+}
+
+.session-form-header {
+  font-size: 21px;
+  color: #000;
+  margin-bottom: 28px;
+  margin-top: 20p
 }
