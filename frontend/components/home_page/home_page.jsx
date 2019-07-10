@@ -13,7 +13,6 @@ class HomePage1 extends React.Component {
   }
 
   homePage() {
-
     return (
       
     <div className="logout-button">
